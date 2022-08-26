@@ -17,7 +17,7 @@ function Aboutus() {
                         </p>
                         <div style={{ textAlign: "center" }}>
 
-                            <Button href="https://little-ties-return-35-197-71-224.loca.lt/" style={{color:"black"}}
+                            <Button href="https://nice-bananas-accept-34-91-217-139.loca.lt/" style={{color:"black"}}
                                                                 size="lg"
                                                                 variant="warning">
                                                                 Segementation of Ships
