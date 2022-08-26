@@ -1,4 +1,4 @@
-import { GoogleMap, useLoadScript} from '@react-google-maps/api';
+import { GoogleMap, useLoadScript } from '@react-google-maps/api';
 import Semantic from '../semantic';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -11,7 +11,7 @@ export default function Home(props) {
 
   if (!isLoaded) return <div>Loading...</div>;
   return (
-    <div style={{marginTop:"7.5vh"}}>
+    <div style={{ marginTop: '7.5vh' }}>
       <Container>
         <Row>
           <Col md={6} sm={12}>
@@ -22,7 +22,11 @@ export default function Home(props) {
             />
           </Col>
           <Col md={6} sm={12}>
-            <Semantic style={{width:"100%",height:"100%"}} url={props.url} />
+            <Semantic
+              style={{ width: '100%', height: '100%' }}
+              url={props.url}
+              href={props.href}
+            />
           </Col>
         </Row>
       </Container>

@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import { useState } from 'react';
 import Map from '../components/map';
 import DataMap from '../components/datamap';
@@ -15,6 +15,7 @@ const Cochin = () => {
         latitude={9.966681}
         longitude={76.27196}
         url="https://learngis2.maps.arcgis.com/apps/instant/basic/index.html?appid=04b3ec17cf5040d58b8ba67221cbcdd5"
+        href="https://raw.githubusercontent.com/anujgoenka9/Port-Data/main/cochin.csv"
       />
       {/* <DataMap map_url="https://mumbai-kepler.netlify.app/" /> */}
       <DataMap map_url="https://mellow-sfogliatella-0b32e5.netlify.app/" />

@@ -16,6 +16,7 @@ import {
 import { RadialLinearScale } from 'chart.js';
 import { PolarArea } from 'react-chartjs-2';
 import { Line } from 'react-chartjs-2';
+import Button from 'react-bootstrap/Button';
 
 ChartJS.register(
   ArcElement,
@@ -181,25 +182,40 @@ export const polardata = {
 
 const DataCharts = () => {
   return (
-    <div style={{ backgroundColor: "#f1f4f9" }} className="charts">
-      
-      <Container style={{
-          backgroundColor: "#f1f4f9",
-          textAlign: "center",
-          paddingTop: "15vh",
-        }}>
-          <h1>Data Visulaisation of Port Data</h1>
-        <Row style={{marginTop:"5vh"}}>
-          <Col md={4} sm={12}><Doughnut data={cargotype} /></Col>
+    <div style={{ backgroundColor: '#f1f4f9' }} className="charts">
+      <Container
+        style={{
+          backgroundColor: '#f1f4f9',
+          textAlign: 'center',
+          paddingTop: '15vh',
+        }}
+      >
+        <h1>Data Visulaisation of Port Data</h1>
+        <Row style={{ marginTop: '5vh' }}>
+          <Col md={4} sm={12}>
+            <Doughnut data={cargotype} />
+          </Col>
           <Col md={1}></Col>
-          <Col md={7} sm={12}><Bar data={bardata} options={baroptions} /></Col>
+          <Col md={7} sm={12}>
+            <Bar data={bardata} options={baroptions} />
+          </Col>
         </Row>
-        <Row style={{marginTop:"17vh"}}>
-        <Col md={7} sm={12}><Line options={lineoptions} data={linedata} /></Col>
-        <Col md={1}></Col>
-        <Col md={4} sm={12}><PolarArea data={polardata} /></Col>
+        <Row style={{ marginTop: '17vh' }}>
+          <Col md={7} sm={12}>
+            <Line options={lineoptions} data={linedata} />
+          </Col>
+          <Col md={1}></Col>
+          <Col md={4} sm={12}>
+            <PolarArea data={polardata} />
+          </Col>
         </Row>
       </Container>
+      <Button
+        variant="info"
+        href="https://github.com/anujgoenka9/Port-Data/blob/main/Data%20Analytics.rar"
+      >
+        Download All
+      </Button>
     </div>
   );
 };

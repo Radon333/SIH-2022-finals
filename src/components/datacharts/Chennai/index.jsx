@@ -1,10 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import React from "react";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import { Doughnut } from "react-chartjs-2";
-import { Bar } from "react-chartjs-2";
+import React from 'react';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 import {
   PointElement,
   LineElement,
@@ -12,10 +12,11 @@ import {
   LinearScale,
   BarElement,
   Title,
-} from "chart.js";
-import { RadialLinearScale } from "chart.js";
-import { PolarArea } from "react-chartjs-2";
-import { Line } from "react-chartjs-2";
+} from 'chart.js';
+import { RadialLinearScale } from 'chart.js';
+import { PolarArea } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
+import Button from 'react-bootstrap/Button';
 
 ChartJS.register(
   ArcElement,
@@ -32,35 +33,35 @@ ChartJS.register(
 
 export const cargotype = {
   labels: [
-    "POL and Crude Product",
-    "Iron Ore",
-    "Fertiliser",
-    "FRM (Dry",
-    "Food- grains",
-    "Coal",
-    "Container Cargo (TEUs)",
-    "Others",
+    'POL and Crude Product',
+    'Iron Ore',
+    'Fertiliser',
+    'FRM (Dry',
+    'Food- grains',
+    'Coal',
+    'Container Cargo (TEUs)',
+    'Others',
   ],
   datasets: [
     {
-      label: "Cargo Shipped in 2020-21 (in Million Tonnes)",
+      label: 'Cargo Shipped in 2020-21 (in Million Tonnes)',
       data: [10230, 0, 135, 202, 0, 0, 1387, 6218],
       backgroundColor: [
-        "#6050DC",
-        "#D52DB7",
-        "#FF2E7E",
-        "#FF6B45",
-        "#FFAB05",
-        "#F54F52",
-        "#93F03B",
-        "#FFEC21",
+        '#6050DC',
+        '#D52DB7',
+        '#FF2E7E',
+        '#FF6B45',
+        '#FFAB05',
+        '#F54F52',
+        '#93F03B',
+        '#FFEC21',
       ],
     },
   ],
 };
 
 export const baroptions = {
-  indexAxis: "y",
+  indexAxis: 'y',
   elements: {
     bar: {
       borderWidth: 2,
@@ -69,39 +70,38 @@ export const baroptions = {
   responsive: true,
   plugins: {
     legend: {
-      position: "right",
+      position: 'right',
     },
     title: {
       display: true,
-      text: "Tare Weight of Containers Handled",
+      text: 'Tare Weight of Containers Handled',
     },
   },
 };
 
-
 export const lineoptions = {
   responsive: true,
   interaction: {
-    mode: "index",
+    mode: 'index',
     intersect: false,
   },
   stacked: false,
   plugins: {
     title: {
       display: true,
-      text: "Cargo Weight Distribution (in TEUs)",
+      text: 'Cargo Weight Distribution (in TEUs)',
     },
   },
   scales: {
     y: {
-      type: "linear",
+      type: 'linear',
       display: true,
-      position: "left",
+      position: 'left',
     },
     y1: {
-      type: "linear",
+      type: 'linear',
       display: true,
-      position: "right",
+      position: 'right',
       grid: {
         drawOnChartArea: false,
       },
@@ -110,71 +110,71 @@ export const lineoptions = {
 };
 
 export const linedata = {
-  labels: ["2018-19", "2019-20", "2020-21"],
+  labels: ['2018-19', '2019-20', '2020-21'],
   datasets: [
     {
-      label: "Container Cargo",
+      label: 'Container Cargo',
       data: [26346, 22519, 22575],
-      borderColor: "rgb(255, 99, 132)",
-      backgroundColor: "rgba(255, 99, 132, 0.5)",
-      yAxisID: "y",
+      borderColor: 'rgb(255, 99, 132)',
+      backgroundColor: 'rgba(255, 99, 132, 0.5)',
+      yAxisID: 'y',
     },
     {
-      label: "Tare Weight",
+      label: 'Tare Weight',
       data: [4917, 4191, 4193],
-      borderColor: "rgb(53, 162, 235)",
-      backgroundColor: "rgba(53, 162, 235, 0.5)",
-      yAxisID: "y1",
+      borderColor: 'rgb(53, 162, 235)',
+      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      yAxisID: 'y1',
     },
     {
-      label: "Container Traffic",
+      label: 'Container Traffic',
       data: [31263, 26710, 26768],
-      borderColor: "rgb(255, 159, 64)",
-      backgroundColor: "rgba(53, 162, 235, 0.5)",
-      yAxisID: "y1",
+      borderColor: 'rgb(255, 159, 64)',
+      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      yAxisID: 'y1',
     },
   ],
 };
 
 export const bardata = {
-  labels: ["Overseas", "Coastal"],
+  labels: ['Overseas', 'Coastal'],
   datasets: [
     {
-      label: "Un-Loaded",
+      label: 'Un-Loaded',
       data: [23568, 4092],
-      borderColor: "rgb(255, 99, 132)",
-      backgroundColor: "rgba(255, 99, 132, 0.5)",
+      borderColor: 'rgb(255, 99, 132)',
+      backgroundColor: 'rgba(255, 99, 132, 0.5)',
     },
     {
-      label: "Loaded",
+      label: 'Loaded',
       data: [14396, 1497],
-      borderColor: "rgb(53, 162, 235)",
-      backgroundColor: "rgba(5+3, 162, 235, 0.5)",
+      borderColor: 'rgb(53, 162, 235)',
+      backgroundColor: 'rgba(5+3, 162, 235, 0.5)',
     },
     {
-      label: "Transhipment",
+      label: 'Transhipment',
       data: [0, 0],
-      borderColor: "rgb(255, 205, 86)",
-      backgroundColor: "rgba(255, 205, 86, 0.5)",
+      borderColor: 'rgb(255, 205, 86)',
+      backgroundColor: 'rgba(255, 205, 86, 0.5)',
     },
   ],
 };
 
 export const polardata = {
   labels: [
-    "Cargo Input Rails",
-    "Cargo Input by Road",
-    "Cargo Output by Rails",
-    "Cargo Output by Road",
+    'Cargo Input Rails',
+    'Cargo Input by Road',
+    'Cargo Output by Rails',
+    'Cargo Output by Road',
   ],
   datasets: [
     {
       data: [33005, 578642, 41069, 514069],
       backgroundColor: [
-        "rgba(255, 99, 132, 0.5)",
-        "rgba(153, 102, 255, 0.5)",
-        "rgba(255, 206, 86, 0.5)",
-        "rgba(75, 192, 192, 0.5)",
+        'rgba(255, 99, 132, 0.5)',
+        'rgba(153, 102, 255, 0.5)',
+        'rgba(255, 206, 86, 0.5)',
+        'rgba(75, 192, 192, 0.5)',
       ],
       borderWidth: 1,
     },
@@ -183,25 +183,40 @@ export const polardata = {
 
 const DataCharts = () => {
   return (
-    <div style={{ backgroundColor: "#f1f4f9" }} className="charts">
-      
-      <Container style={{
-          backgroundColor: "#f1f4f9",
-          textAlign: "center",
-          paddingTop: "15vh",
-        }}>
-          <h1>Data Visulaisation of Port Data</h1>
-        <Row style={{marginTop:"5vh"}}>
-          <Col md={4} sm={12}><Doughnut data={cargotype} /></Col>
+    <div style={{ backgroundColor: '#f1f4f9' }} className="charts">
+      <Container
+        style={{
+          backgroundColor: '#f1f4f9',
+          textAlign: 'center',
+          paddingTop: '15vh',
+        }}
+      >
+        <h1>Data Visulaisation of Port Data</h1>
+        <Row style={{ marginTop: '5vh' }}>
+          <Col md={4} sm={12}>
+            <Doughnut data={cargotype} />
+          </Col>
           <Col md={1}></Col>
-          <Col md={7} sm={12}><Bar data={bardata} options={baroptions} /></Col>
+          <Col md={7} sm={12}>
+            <Bar data={bardata} options={baroptions} />
+          </Col>
         </Row>
-        <Row style={{marginTop:"17vh"}}>
-        <Col md={7} sm={12}><Line options={lineoptions} data={linedata} /></Col>
-        <Col md={1}></Col>
-        <Col md={4} sm={12}><PolarArea data={polardata} /></Col>
+        <Row style={{ marginTop: '17vh' }}>
+          <Col md={7} sm={12}>
+            <Line options={lineoptions} data={linedata} />
+          </Col>
+          <Col md={1}></Col>
+          <Col md={4} sm={12}>
+            <PolarArea data={polardata} />
+          </Col>
         </Row>
       </Container>
+      <Button
+        variant="info"
+        href="https://github.com/anujgoenka9/Port-Data/blob/main/Data%20Analytics.rar"
+      >
+        Download All
+      </Button>
     </div>
   );
 };
