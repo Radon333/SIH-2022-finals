@@ -16,13 +16,6 @@ function Aboutus() {
                             This project is aimed at creating a centralized portal for the major Indian shipping ports. Due to the lack of a uniform GIS system at Indian ports, individual pots are responsible for areas which only fall directly under their jurisdiction. These individual hierarchies do not allow for a uniform flow of data streams under the various ports of India. Our project propses a solution to this problem by creating a common portal for all information via leveraging satellite imagery.
                         </p>
                         <div style={{ textAlign: "center" }}>
-
-                            <Button href="https://nice-bananas-accept-34-91-217-139.loca.lt/" style={{color:"black"}}
-                                                                size="lg"
-                                                                variant="warning">
-                                                                Segementation of Ships
-                            </Button>
-                            &nbsp;
                             <Link to="/mumbai">
                                 <Button style={{color:"black"}}
                                     target="_blank"
@@ -30,7 +23,7 @@ function Aboutus() {
                                     size="lg"
                                     variant="success"
                                 >
-                                    Start Segmentation pof Ports
+                                    Start Segmentation of Ports
                                 </Button>
                             </Link>
                         </div>
