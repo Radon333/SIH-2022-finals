@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 export default function Home(props) {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyBeXATW1vTUKF2h1CNXzaDrW9TYlbu1RDU',
+    googleMapsApiKey: 'YOUR API KEY',
   });
 
   if (!isLoaded) return <div>Loading...</div>;
