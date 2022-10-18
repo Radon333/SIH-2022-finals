@@ -36,7 +36,7 @@ const NewWeather = () => {
           <span>{name}</span>
           <sup>India</sup>
         </h2>
-        <p>Date: {moment().format('LL')}</p>
+        <p className="info">Date: {moment().format('LL')}</p>
         <div className="city-temp">
           {temp}
           <sup>&deg;C</sup>
@@ -48,13 +48,13 @@ const NewWeather = () => {
               src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
             />
           </motion.div>
-          <p>{desc}</p>
-          <p>
+          <p className="info">{desc}</p>
+          <p className="info">
             Humidity: {humid}% &nbsp; Pressure: {pressure} Pa &nbsp; Wind Speed:{' '}
             {speed}
             m/s
           </p>
-          <p>
+          <p className="info">
             Sunrise:{' '}
             {new Date(sunrise * 1000).toLocaleTimeString('en-GB', {
               hour: '2-digit',
