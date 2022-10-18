@@ -191,7 +191,7 @@ const DataCharts = () => {
           paddingTop: '15vh',
         }}
       >
-        <h1>Data Visulaisation of Port Data</h1>
+        <h1>Data Visualization of Port Data</h1>
         <Row style={{ marginTop: '5vh' }}>
           <Col md={4} sm={12}>
             <Doughnut data={cargotype} />

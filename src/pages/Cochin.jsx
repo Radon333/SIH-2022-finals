@@ -16,6 +16,7 @@ const Cochin = () => {
         longitude={76.27196}
         url="https://learngis2.maps.arcgis.com/apps/instant/basic/index.html?appid=04b3ec17cf5040d58b8ba67221cbcdd5"
         href="https://raw.githubusercontent.com/anujgoenka9/Port-Data/main/cochin.csv"
+        path="cochin"
       />
       {/* <DataMap map_url="https://mumbai-kepler.netlify.app/" /> */}
       <DataMap map_url="https://mellow-sfogliatella-0b32e5.netlify.app/" />

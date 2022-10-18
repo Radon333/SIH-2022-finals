@@ -16,6 +16,7 @@ const Manglore = () => {
         longitude={74.812275}
         url="https://learngis2.maps.arcgis.com/apps/instant/basic/index.html?appid=a495b28d602f42bea31fe221266d8b8e"
         href="https://raw.githubusercontent.com/anujgoenka9/Port-Data/main/manglore.csv"
+        path="manglore"
       />
       {/* <DataMap map_url="https://mumbai-kepler.netlify.app/" /> */}
       <DataMap map_url="https://steady-kitsune-c601b8.netlify.app/" />

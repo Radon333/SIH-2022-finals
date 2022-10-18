@@ -15,6 +15,7 @@ const Chennai = () => {
         longitude={80.2899}
         url="https://learngis2.maps.arcgis.com/apps/instant/basic/index.html?appid=904b01dbd5d34902b77a620ee5545516"
         href="https://raw.githubusercontent.com/anujgoenka9/Port-Data/main/chennai.csv"
+        path="chennai"
       />
       {/* <DataMap map_url="https://mumbai-kepler.netlify.app/" /> */}
       <DataMap map_url="https://adorable-selkie-a35062.netlify.app/" />

@@ -16,6 +16,7 @@ const DeenDayal = () => {
         longitude={70.218651}
         url="https://learngis2.maps.arcgis.com/apps/instant/basic/index.html?appid=4c5255669c074252af23ff408474ad3c"
         href="https://raw.githubusercontent.com/anujgoenka9/Port-Data/main/deendayal.csv"
+        path="deendayal"
       />
       {/* <DataMap map_url="https://mumbai-kepler.netlify.app/" /> */}
       <DataMap map_url="https://lucent-sunburst-ae070b.netlify.app/" />

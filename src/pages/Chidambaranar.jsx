@@ -16,6 +16,7 @@ const Chidambaranar = () => {
         longitude={78.1215}
         url="https://learngis2.maps.arcgis.com/apps/instant/basic/index.html?appid=f99f52cdbb9f489f8fb8cdae33e2f4cb"
         href="https://raw.githubusercontent.com/anujgoenka9/Port-Data/main/thoothukudi.csv"
+        path="chidambaranar"
       />
       {/* <DataMap map_url="https://mumbai-kepler.netlify.app/" /> */}
       <DataMap map_url="https://lively-bombolone-54b43e.netlify.app/" />

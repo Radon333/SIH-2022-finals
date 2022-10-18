@@ -16,6 +16,7 @@ const Kamarajar = () => {
         longitude={80.326744}
         url="https://learngis2.maps.arcgis.com/apps/instant/basic/index.html?appid=904b01dbd5d34902b77a620ee5545516"
         href="https://raw.githubusercontent.com/anujgoenka9/Port-Data/main/kamarajar.csv"
+        path="kamarajar"
       />
       {/* <DataMap map_url="https://mumbai-kepler.netlify.app/" /> */}
       <DataMap map_url="https://heartfelt-granita-322a38.netlify.app/" />

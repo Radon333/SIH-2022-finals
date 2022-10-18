@@ -16,6 +16,7 @@ const Mormugao = () => {
         longitude={73.799978}
         url="https://learngis2.maps.arcgis.com/apps/instant/basic/index.html?appid=c1e30fdf561e40e8bfe1e3b078a52bd2"
         href="https://raw.githubusercontent.com/anujgoenka9/Port-Data/main/goa.csv"
+        path="goa"
       />
       <DataMap map_url="https://extraordinary-naiad-300b21.netlify.app/" />
       <DataCharts />
