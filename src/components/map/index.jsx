@@ -19,7 +19,7 @@ import MorgmugaoWeather from '../weather/MormugaoWeather';
 
 export default function Home(props) {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: 'YOUR API KEY',
+    googleMapsApiKey: 'AIzaSyBqW6L2gO43sRg0tcBJDOlKSt9EgzfC7jg',
   });
 
   if (!isLoaded) return <div>Loading...</div>;
